@@ -16,4 +16,5 @@ return array(
     'Gettext\\' => array($vendorDir . '/gettext/gettext/src'),
     'Dealerdirect\\Composer\\Plugin\\Installers\\PHPCodeSniffer\\' => array($vendorDir . '/dealerdirect/phpcodesniffer-composer-installer/src'),
     'Carbon_Fields\\' => array($vendorDir . '/htmlburger/carbon-fields/core'),
+    'Carbon_Field_Icon\\' => array($vendorDir . '/htmlburger/carbon-field-icon/core'),
 );

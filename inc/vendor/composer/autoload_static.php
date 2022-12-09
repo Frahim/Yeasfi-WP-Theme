@@ -4,11 +4,12 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit59f095a50f46c165bd2d9a1518e8b18d
+class ComposerStaticInitf94f4ec97861b41370f01b68bed28ad0
 {
     public static $files = array (
         '3937806105cc8e221b8fa8db5b70d2f2' => __DIR__ . '/..' . '/wp-cli/mustangostang-spyc/includes/functions.php',
         'be01b9b16925dcb22165c40b46681ac6' => __DIR__ . '/..' . '/wp-cli/php-cli-tools/lib/cli/cli.php',
+        '1db9a602f20508d50525f9dad168786f' => __DIR__ . '/..' . '/htmlburger/carbon-field-icon/core/bootstrap.php',
         'ffb465a494c3101218c4417180c2c9a2' => __DIR__ . '/..' . '/wp-cli/i18n-command/i18n-command.php',
     );
 
@@ -46,6 +47,7 @@ class ComposerStaticInit59f095a50f46c165bd2d9a1518e8b18d
         'C' => 
         array (
             'Carbon_Fields\\' => 14,
+            'Carbon_Field_Icon\\' => 18,
         ),
     );
 
@@ -89,6 +91,10 @@ class ComposerStaticInit59f095a50f46c165bd2d9a1518e8b18d
         'Carbon_Fields\\' => 
         array (
             0 => __DIR__ . '/..' . '/htmlburger/carbon-fields/core',
+        ),
+        'Carbon_Field_Icon\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/htmlburger/carbon-field-icon/core',
         ),
     );
 
@@ -168,10 +174,10 @@ class ComposerStaticInit59f095a50f46c165bd2d9a1518e8b18d
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit59f095a50f46c165bd2d9a1518e8b18d::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit59f095a50f46c165bd2d9a1518e8b18d::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInit59f095a50f46c165bd2d9a1518e8b18d::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInit59f095a50f46c165bd2d9a1518e8b18d::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitf94f4ec97861b41370f01b68bed28ad0::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitf94f4ec97861b41370f01b68bed28ad0::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInitf94f4ec97861b41370f01b68bed28ad0::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInitf94f4ec97861b41370f01b68bed28ad0::$classMap;
 
         }, null, ClassLoader::class);
     }

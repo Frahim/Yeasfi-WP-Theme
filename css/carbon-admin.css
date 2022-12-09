@@ -7,3 +7,10 @@
     padding: 0 !important;
     color: #fff !important;
 }
+.cf-container-carbon_fields_container_basic_information .cf-field.cf-image {
+    max-width: 50%;
+}
+
+.cf-container-carbon_fields_container_basic_information .cf-complex__group-body, .cf-container-carbon_fields_container_social_links .cf-complex__group-body{
+    flex-wrap: nowrap;
+}

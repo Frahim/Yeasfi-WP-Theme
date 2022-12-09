@@ -3,7 +3,7 @@
         'name' => 'automattic/underscores',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => 'bd08153dcbc3125c54bc56039acb62ed1f4a25d9',
+        'reference' => '7f92c6d05e384db19f38dd19c6f2dc4c4ba4983d',
         'type' => 'wordpress-theme',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         'automattic/underscores' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => 'bd08153dcbc3125c54bc56039acb62ed1f4a25d9',
+            'reference' => '7f92c6d05e384db19f38dd19c6f2dc4c4ba4983d',
             'type' => 'wordpress-theme',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -60,6 +60,15 @@
             'replaced' => array(
                 0 => '*',
             ),
+        ),
+        'htmlburger/carbon-field-icon' => array(
+            'pretty_version' => 'v3.1.0',
+            'version' => '3.1.0.0',
+            'reference' => 'fe0341462e8c8681bb7ff20380974022578e15b0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../htmlburger/carbon-field-icon',
+            'aliases' => array(),
+            'dev_requirement' => false,
         ),
         'htmlburger/carbon-fields' => array(
             'pretty_version' => 'v3.3.4',
