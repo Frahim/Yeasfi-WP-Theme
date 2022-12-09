@@ -176,3 +176,21 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+/**
+ * Carbon theme Option
+ */
+require get_template_directory() . '/inc/carbon-theme-option.php';
+
+
+/**
+ * Admin panel 
+ */
+function enqueuing_admin_scripts(){	
+		wp_enqueue_style('carbon-admin-css', get_template_directory_uri().'/css/carbon-admin.css');
+		wp_enqueue_script('carbon-admin-js', get_template_directory_uri().'/js/carbon-admin.js');
+	}
+	 
+add_action( 'admin_enqueue_scripts', 'enqueuing_admin_scripts' );
+	
+
+
