@@ -140,8 +140,14 @@ add_action( 'widgets_init', 'yeasfi_wp_theme_widgets_init' );
 function yeasfi_wp_theme_scripts() {
 	wp_enqueue_style( 'yeasfi-wp-theme-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_style_add_data( 'yeasfi-wp-theme-style', 'rtl', 'replace' );
+	wp_enqueue_style( 'yeasfi-bostrap-grid', get_template_directory_uri().'/css/bootstrap-grid.min.css', array(), _S_VERSION );
+	
 
-	wp_enqueue_script( 'yeasfi-wp-theme-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
+
+	wp_enqueue_script( 'yeasfi-jquery', get_template_directory_uri() . '/js/jquery-3.6.1.min.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'yeasfi-wp-theme-customizer', get_template_directory_uri() . '/js/customizer.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'yeasfi-bostrap-js', get_template_directory_uri() . '/js/bootstrap.min.js', array(), _S_VERSION, true );
+	
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -193,4 +199,6 @@ function enqueuing_admin_scripts(){
 add_action( 'admin_enqueue_scripts', 'enqueuing_admin_scripts' );
 	
 
-
+/**
+ * crb_dynamic_sidebar
+ */
